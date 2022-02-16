@@ -4,20 +4,51 @@
     <!-- Used by Keyboard -->
     <meta charset="utf-8">
 
-    <title> Flexbox </title>
+    <title> Flexbox, 3-Column </title>
 
 <!-- Used by Google Search -->
     <meta name="author" content="Ahmed Mostafa">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="INDEX File in Flexbox">
+    <meta name="keywords" content="Flexbox">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style> div {border: thin dotted blue;} </style>
+    <style>
+    div {border: thin dotted blue;}
+    * {
+      box-sizing: border-box;
+    }
+    .header {
+      border: 1px solid purple;
+    }
+    .menu {
+      width: 25%
+      float: left;
+      padding: 15px;
+      border: 1px solid purple;
+    }
+    .main {
+      width:50%;
+      float: right;
+      padding: 15px;
+      border: 1px solid purple;
+    }
+    .aside {
+      width: 25%;
+      float: left;
+      padding: 15px;
+      border: 1px solid purple;
+
+    }
+    .footer {
+      border: 1px solid purple;
+      padding: 15px;
+    }
+  </style>
 
   </head>
   <body>
-    <div> Hi! My name is What? My name is Who? My name is Chika-chika Slim Shady </div>
-    <header> Template Page</header>
+
+    <header></header>
     <nav></nav>
     <aside></aside>
     <section><article></article></section>
