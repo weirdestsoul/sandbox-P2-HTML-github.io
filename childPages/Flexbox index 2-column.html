@@ -12,15 +12,35 @@
     <meta name="keywords" content="Flexbox">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style> div {border: thin dotted blue;} </style>
+    <style>
+    div {border: thin dotted blue;}
+    * {
+      box-sizing: border-box;
+    }
+    .header {
+      border: 1px solid red;
+    }
+    .menu {
+      width: 25%
+      float: left;
+      padding: 15px;
+      border: 1 px solid red;
+    }
+    .main {
+      width:75%;
+      float: left;
+      padding: 15px;
+      border: 1 px solid red;
+    }
+    </style>
 
   </head>
   <body>
 
-    <header>INDEX File as Flexbox, 2-column</header>
-    <nav><h3>Navigation with no viewport in a h3-tag</h3></nav>
-    <aside><p>This is the aside space with no viewport in a p-tag</p></aside>
-    <section> <h3 style="font-size: 2.5vw">Section 1</h3>
+  <div> <header><h3>INDEX File as Flexbox, 2-column</h3></header></div>
+    <div><nav><h3>Navigation with no viewport in a h3-tag</h3></nav></div>
+    <div><aside><p>This is the aside space with no viewport in a p-tag</p></aside></div>
+    <div><section> <h3 style="font-size: 2.5vw">Section 1</h3>
       <article>
         <p style="font-size: 1vw">Here are the hyperlinks to the manditory Experement Pages</p>
         <!-- See the HTML .txt document for a summery -->
@@ -36,7 +56,7 @@
           <li style="font-size: 1vw">What this index page might look loke with Flexbox, <a href="childPages/Flexbox Index 3-column.html" target="_blank">Click Here</a>
         </ol>
       </article>
-    </section>
+    </section></div>
   </body>
 <footer>
   <blockquote cite="https://www.studiobinder.com/blog/best-michael-scott-quotes-the-office/"> <!-- Date Accessed 20220208 --></blockquote>
